@@ -1,0 +1,66 @@
+<div class="header" id="favHeader">
+	<h1>Recipes</h1>
+</div>
+
+<div>
+	<div ng-controller="ResultListCtrl">
+		<div class="filter navbar-fixed-top" ng-class="{filterClosed:!filterCheck, filterOpened:filterCheck}">
+			<form>
+				<div class="radioDiv" >
+					<label ng-repeat="f in foodType" id="link-color" class="radioLabel" ng-click="selectItem(f)" ng-class="{'radio-label-active' : selectedItem == f}">{{f}}</label>
+				</div>
+				<hr />
+				<div class="radioDiv radioDivBottom">
+					<label ng-repeat="c in cuisine" id="link-color" class="radioLabel" ng-click="selectCuisine(c)" ng-class="{'radio-label-active' : selectedCuisine == c}">{{c}}</label>
+				</div>
+				<label class="filter-counter" ng-class="{'zeroCounter' : counter == 0}">{{counter}}</label>
+			</form>
+			
+			<button id="arrow" class="glyphicon btn-lg" ng-class="{'glyphicon-chevron-down':!arrowButton, 'glyphicon-chevron-up':arrowButton}" ng-click="filterArrow()" ></button>
+			
+		</div>
+		<!-- Lists the contents of the recipes-list -->
+		<div class="list"></div>
+		<div ng-repeat="r in recipes">
+			<div class="list-group" ng-click="goTo(r.RecipeID)">
+				<div class="row">
+					<div class="col-xs-4"><img class="results-image" ng-src="{{r.ImageURL}}" /></div> 
+					<div class="col-xs-8"><h4 class="list-group-item-heading">{{r.Title}}</h4></div>
+					<div align="right" id="star-rating">
+						<span id="thumbnail" ng-style="setStar5(r.StarRating)"></span>
+						<span id="thumbnail" ng-style="setStar4(r.StarRating)"></span>
+						<span id="thumbnail" ng-style="setStar3(r.StarRating)"></span>
+						<span id="thumbnail" ng-style="setStar2(r.StarRating)"></span>
+						<span id="thumbnail" ng-style="setStar1(r.StarRating)"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="text-center">
+			<nav>
+			  <ul class="pagination">
+
+			  	<!-- Link to the previous page -->
+			    <li ng-class="prevDisabled({{currentPageNr}})">
+			      <a href="#/resultList/{{currentPageNr}}" id="paging" ng-click="previous()" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			      </a>
+			    </li>
+
+			    <!-- A set of links that can bring the user to any of the next or previous two pages from the current page -->
+			    <li ng-repeat="nr in pages()" ng-class="{active: nr == currentPageNr}" ng-click="setPage(nr)">
+			    	<a href="#/resultList/{{currentPageNr}}" id="paging">{{nr}}</a>
+			    </li>
+
+			    <!-- Link to the next page -->
+			    <li ng-class="nextDisabled({{currentPageNr}})">
+			      <a href="#/resultList/{{currentPageNr}}" id="paging" ng-click="next()" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			      </a>
+			    </li>
+			  </ul>
+			</nav>
+		</div>
+	</div>
+</div>

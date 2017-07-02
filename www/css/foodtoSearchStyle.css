@@ -1,0 +1,107 @@
+#ingredientsInputForm {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	width: 100%;
+}
+#addIngredient {
+	font-weight: 900;
+	color: white;
+	background-color: #3C3532; 
+}
+#ingredient-item {
+	width: 100%;
+	font-size: 17px;
+}
+#ingredient-li {
+	width: 80%;
+	float: left;
+	padding-bottom: 16px;
+	list-style-type: none;
+
+}
+#ingredient-minus{
+	float: right;
+	margin-right: 10px;
+	cursor: pointer;
+	color: #DD2222;
+}
+#ingredient-ul {
+	height: 120px;
+}
+#search-button-place-holder {
+	position: absolute;
+	bottom: 90px;
+	right: 16px;
+	z-index: 4;
+}
+.search-button-place-holder-zero {
+	z-index: -4;
+}
+#counter-place-holder {
+	position: absolute;
+	z-index: 1;
+	bottom: 160px;
+	right: 66px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	box-sizing: border-box;
+}
+.conuter {
+	float: left; 
+	font-size: 14px;
+	text-align: right;
+	z-index: 1;
+	background-color: #436965;	/* #9CC0BC;  #3C3532;  #665656; */
+}
+.redCounter {
+	background-color: #DD2222;
+}
+.search-button-div {
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	background-color: #E3B57C; /* #665656; #3279B6; #9cc0bc;*/
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	padding: 26px;
+	cursor: pointer;
+	z-index: 1;
+	margin-left: 20px;
+	margin-top: 10px;
+	/*border: solid 1px #bc7946;
+	box-shadow: -1px 1px 1px #BBBBBB;*/
+}
+.search-button-div-zero {
+	background-color: #DDDDE5;
+	color: #F5F5F5;
+	border: none;
+	box-shadow: none;
+	cursor: default;
+}
+.radio-div {
+	margin-left: 8%;
+	/*width: 62%;*/
+	margin-right: 96px;
+	line-height: 200%;
+}
+.radio-label {
+	color: #3279B6;
+	padding: 4px;
+	margin: 2px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.radio-label-active {
+	background-color: #3C3532; 
+	font-weight: bold;
+	color: white;
+	border-radius: 4px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.radio-div-bottom {
+	padding-bottom: 80px;
+}
+

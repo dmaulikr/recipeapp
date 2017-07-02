@@ -1,0 +1,80 @@
+
+<div ng-controller="ReadShopListController" id="readshoplist-body">
+	<div class="header">
+		<h1>{{shopListTitle}}</h1>
+		<!-- User sync controls -->
+		<div ng-controller="UserControlsController">
+			<span class="glyphicon glyphicon-refresh login-controls-button" id="shopLoginButton" ng-click="userActions()" ng-class="{disabled: !currentUser, 'gly-spin': syncing}"></span>
+			<div ng-if="showUserActions" id="login-controls">
+				<span id="user-name">{{currentUser.getUsername()}}</span>
+				<a href="#/login" ng-if="!currentUser" id="loginToSync">Login to sync</a>
+				<div ng-if="currentUser">
+					<ul>
+						<li>
+							<a ng-click="getFromCloud()">Get items from cloud</a>
+						</li>
+						<li>
+							<a ng-click="saveToCloud()">Save items to cloud</a><br/>
+						</li>
+						<li>
+							<a ng-click="logout()">Log out</a>				
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end user sync controls -->
+	</div>
+	<div id="shoplist-content">
+		
+		<div id="shoplist-ingredients">
+			<ul>
+				<li ng-repeat="i in items track by $index" ng-class-even="'even-steven'">
+					<label for="checkbox-{{$index}}" class="text-label" >{{i.item}}</label>
+					<div class="shoplist-buttons">
+						<input name="checkbox-{{$index}}" type="checkbox" ng-model="i.checked"  class="css-checkbox" id="checkbox-{{$index}}" ng-click="moveItem($index,'shop')" /><label for="checkbox-{{$index}}" class="css-label"></label>
+						
+					</div>					
+				</li>			
+			</ul>
+		</div>
+		
+		<form class="shoplist-input input-group" novalidate name="addForm"  ng-submit="addItem()">		
+			<div class="input-group">
+				<input name="ingredientsInput" type="text" ng-model="addItemInput" id="addItemInputBox" class="form-control" placeholder="Item" required />
+				<span class="input-group-btn">
+					<button type="submit" class="btn" >+</span></button>
+				</span>
+			</div>
+		</form>
+
+		<div id="shopping-cart">
+			<div class="row">
+				<div class="col-xs-4 cart">
+					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">In<br>Cart</span>
+				</div>
+				
+				<div class="col-xs-2 trash">
+					<span class="glyphicon glyphicon-trash" ng-click="emptyCart()" id="cartDelete"></span>
+				</div>
+			</div>
+			
+			<ul>
+				<li ng-repeat="inCart in cartItems track by $index" ng-class-even="'even-steven'">
+					<label for="checkboxCart-{{$index}}" class="text-label" >{{inCart.item}}</label>
+					<div class="shoplist-buttons">
+						<input name="checkboxCart-{{$index}}" type="checkbox" ng-model="inCart.checked"  class="css-checkbox" id="checkboxCart-{{$index}}" ng-click="moveItem($index, 'back')"/><label for="checkboxCart-{{$index}}" class="css-label"></label>
+					</div>						
+				</li>			
+			</ul>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+

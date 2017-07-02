@@ -1,0 +1,28 @@
+api.bigoven.com
+
+inlogg:
+användarnamn: groupfour
+email: joh.lilja@gmail.com
+lösen: grupp4
+
+
+api-key: dvx44z3IGLBGqvZUdmII9Z4LBTE806pm
+
+extra nyckel:	dvx3ge4AQNe1D0c62Ihon6l2Vx1G00BX
+		dvxY2E2ald7pAb0Mc8O7786EB7kg9I1H
+
+
+frågor:
+LISTA
+http://api.bigoven.com/recipes
+
+?rpp=50										// antal svar
+&title_kw=tomato							// eller any_kw, går att ha flera med ',' mellan
+&sort=quality								//
+&include_primarycat=dessert					// bara en kategori
+&api_key=dvx44z3IGLBGqvZUdmII9Z4LBTE806pm
+&pg=1										// vilken sida
+
+RECEPT
+http://api.bigoven.com/recipe/124071		// recept-id
+?api_key=dvx44z3IGLBGqvZUdmII9Z4LBTE806pm

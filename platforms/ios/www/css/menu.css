@@ -1,0 +1,52 @@
+
+.navbar {
+	background: #436965;
+}		
+
+.nav {
+	font-size: 21px;
+	width: 	100%;
+	min-height: 60px;
+}
+
+.nav>li {
+	text-align: center;
+	width: 33%;
+	display: inline;
+}
+
+.iphone-back {
+	position: absolute;
+	left: 10px;
+	top:12px;
+
+}
+
+.iphone-back>a {
+	color: white;
+}
+
+.navbar-nav>li {
+	float: left;
+}
+
+.navbar-nav {
+	margin: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #f5f5f5;
+	text-shadow: 0 1px 0 rgba(100, 100, 100, .20);
+	padding-top: 15px;
+  	padding-bottom: 10px;
+}
+ 
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a.activeSection {
+	color: #E3B57C;
+}
+
+
+.navbar-default .navbar-nav>li>a:focus {
+	color: white;
+}

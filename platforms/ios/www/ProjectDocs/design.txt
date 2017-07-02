@@ -1,0 +1,58 @@
+#9CC0BC: Ljusgrön - runda knappar 
+#436965: Mörkgrön - header och meny + markerade knappar
+#3C3532: Mörkgrå - fyrkantiga knappar
+
+
+
+sökvy - Peter
+
+logo över sökfält
+färg på fyrkantiga och runda knappar
+marginaler så att filtren syns
+
+
+resultatlista - Olsson
+
+stjärnor platt design
+färger på knappar
+filter grön
+rubriker svart
+bakgrundsbild under bilder så det syns om det inte finns någon bild
+
+
+
+receptvy - Philip
+
+• ta bort prickar
+• flytta ihop check-all-knappar på samma rad
+som lägg till lista
+• radbryten i instruktioner
+• färger på knappar
+
+
+favoriter - Philip
+
+• använd header-klass
+• ta bort prickar
+• varannan grön - använd even steven
+
+
+listor - Mattias
+
+röda minusknappar
+samma storlek som favoritlistan.
+lite mer luft
+overflow hidden
+
+
+Lägg till i listan-modal
+
+Ändra färg på knappar
+
+////////
+
+bryta upp instruktioner
+knappen favoriters z-index
+
+
+

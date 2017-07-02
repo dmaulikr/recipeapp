@@ -1,0 +1,40 @@
+<div class="header" id="favHeader">
+	<h1>Recipes</h1>
+</div>
+
+
+<div class="container" ng-controller="ContentCtrl">
+
+	<form class="input-group" novalidate name="ingredientsInputForm" id="ingredientsInputForm" ng-submit="addIngredient($event)">		
+		<div class="input-group">
+			<input name="ingredientsInput" id="ingredientsInput" type="text" ng-model="ingredientsInput" class="form-control" placeholder="Ingredient" required />
+			<span class="input-group-btn">
+				<button name="addIngredient" id="addIngredient" type="submit" class="btn" >+</span></button>
+			</span>
+		</div>
+	</form>
+
+	<div id="ingredient-ul">
+		<ul>
+			<div ng-repeat="i in ingredientList" id="ingredient-item" ><div id="ingredient-li"><li><spa id="ingredientp">{{i}}</span></li></div><div id="ingredient-minus" class="glyphicon glyphicon-minus-sign" name="removeIngredientButton" ng-click="removeIngredient(i)" type="button" ></div></div>
+		</ul>
+	</div>
+	<hr />
+
+ 	<div class="radio-div" >
+		<label ng-repeat="f in foodType" class="radio-label" ng-click="selectItem(f)" ng-class="{'radio-label-active' : selectedItem == f}">{{f}}</label>
+	</div>
+	<!-- <hr />
+	<form>
+	<div class="radio-div radio-div-bottom">
+		<label ng-repeat="c in cuisine" class="radio-label" ng-click="selectCuisine(c)" ng-class="{'radio-label-active' : selectedCuisine == c}">{{c}}</label>
+	</div>
+	</form>  -->
+	<div id="counter-place-holder">
+		<div name="conuter" class="label label-warning conuter" id="conuter" ng-class="{'redCounter' : x == 0}" >{{x}}</div>
+	</div>
+	<div id="search-button-place-holder" ng-class="{'search-button-place-holder-zero' : x == 0}" >
+		<!-- <div id="conter-div">{{x}}</div> -->
+		<div class="search-button-div" ng-click=" !x || toResult()" ng-class="{'search-button-div-zero' : x == 0}"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+	</div>
+</div>

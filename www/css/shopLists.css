@@ -1,0 +1,50 @@
+
+#inputBox {
+	font-size: 16px;
+}
+.point {
+	cursor:pointer;
+}
+#add-button {
+	padding: 0px;
+}
+
+.btn-circle {
+	border-radius:50%;
+	color:white;
+	background-color: #9CC0BC;
+    font-size: 18px;
+    
+}
+.minus-btn {
+	text-align: center;
+	float: right;
+	cursor: pointer;
+	color: #DD2222;
+	line-height: 16px;
+
+}
+.shop-list-item {
+	padding: 8px 0px 8px 0px;
+	font-size: 16px;
+	
+}
+.item-span {
+	display:block;
+	overflow: hidden;
+}
+
+
+#shop-list {
+	margin: 10px 15px 0px 15px;
+}
+
+.input-field {
+	margin-top: 20px;
+	
+}
+.input-field .input-group .btn {
+	color: #fff;
+	background-color: #3C3532;
+}
+

@@ -1,0 +1,166 @@
+.row {
+	margin: 0px;
+}
+
+.col-xs-4 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.col-xs-8 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+h4 {
+	font-family: helvetica, bold;
+	font-size: 22px;
+	bottom: 10px;
+	background: rgba(1,1,1, 0.75);
+	padding: 8px;
+	color: white;
+}
+
+.list {
+	margin-top: 20px;
+	background-color: white;
+}
+
+.results-image {
+	width: 150px;
+	height: 150px;
+}
+
+#paging {
+	border-radius: 17px;
+	border-color: transparent;
+	margin: 2px;
+}
+
+.pagination {
+	margin-bottom: 80px;
+}
+
+.pagination > li > a{
+	background-color: #9cc0bc;
+	color: white;
+
+}
+
+.pagination > .active > a {
+	background-color: #436965;
+}
+
+.pagination > .active > a:hover {
+	background-color: #EEE;
+	color: #436965;
+}
+
+#thumbnail {
+	width: 15px;
+	height: 15px; 
+	background-size: 15px 15px;
+	float: right;
+}
+
+#star-rating {
+	padding-right: 30px;
+
+}
+
+.filter {
+	background-color: rgba(67,105,101, 0.95);
+}
+
+.filterClosed {
+	margin-top: -210px;
+	height: 200px;
+	background-color: transparent;
+}
+
+.filterOpened {
+	margin-top: 0px;
+	padding-top: 20px;
+}
+
+#link-color {
+	color: white;
+}
+
+#arrow {
+	color: white;
+	background-color: #9CC0BC;
+	border: none;
+	margin-top: 75px;
+	margin-left: 5px;
+	width: 75px;
+	height: 75px;
+	position: center;
+}
+
+@media (max-width: 512px) {
+	#arrow {
+		color: white;
+		background-color: #9CC0BC;
+		border: none;
+		margin-top: 35px;
+		margin-left: 5px;
+		width: 75px;
+		height: 75px;
+		position: center;
+	}
+}
+
+@media (max-width: 344px) {
+	#arrow {
+		color: white;
+		font-size: 30px;
+		background-color: #9CC0BC;
+		border: none;
+		margin-top: 0px;
+		margin-left: 5px;
+		width: 75px;
+		height: 75px;
+		padding-top: 35px;
+	}
+}
+
+.radioDiv {
+	margin-left: 8%;
+	width: 86%;
+	line-height: 200%;
+}
+
+.radioLabel {
+	color: #3279B6;
+	padding: 4px;
+	margin: 2px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.filter-counter {
+	background-color: #3C3532;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	z-index: 1;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	border-radius: 4px;
+	padding: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.zeroCounter {
+	background-color: #DD2222;
+}
+
+
+
+
+
+
+

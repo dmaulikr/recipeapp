@@ -1,0 +1,29 @@
+<div class="header" id="favHeader">
+	<h1>Recipe</h1>
+</div>
+
+<div ng-controller="RecipeCtrl" id="recipeContainer">
+	<button type="button" class="btn btn-circle favouriteButton" ng-click="favourite()" id="favButton">
+		<span class="glyphicon glyphicon-heart" /><span class="glyphicon glyphicon-plus" id="plusIcon" />
+	</button>
+	<img ng-src="{{image}}" id="recipeImg" />
+	<h2 id="recipeTitle">{{name}}</h2>
+
+	<div>
+		<ul id="ingredientList">
+			<li ng-repeat="i in ingredientList track by $index" class="recipeIngredients">
+				<input ng-hide="{{i.IsHeading}}" type="checkbox" name="check" id="recipeCheck-{{$index}}" class="checkBoxes"/> 
+				<label for="recipeCheck-{{$index}}" id="ingredientText">{{i.MetricDisplayQuantity}} {{i.MetricUnit}} {{i.Name}}</label>
+			</li>
+		</ul>
+	</div>
+
+	<button ng-click="checkAll()" class="btn checkAllButton" id="checkAllButton">Check all</button>
+	<button ng-click="uncheckAll()" class="btn uncheckAllButton" id="uncheckAllButton">Uncheck all</button>
+
+	<button type="button" class="btn btn-circle addButton" ng-click="validateBoxes(); open()" id="buttonColors" ng-controller="ModalCtrl">
+		<span class="glyphicon glyphicon-menu-hamburger" /><span class="glyphicon glyphicon-plus" id="plusIcon" />
+	</button>
+	<p class="instructions" ng-bind-html="instructions">{{instructions}}</p>
+</div>
+

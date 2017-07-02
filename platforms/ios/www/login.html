@@ -1,0 +1,22 @@
+
+<div ng-controller="LoginController">
+	<div id="login-header">
+		<h1>Log in</h1>
+	</div>
+	<div id="login-content">
+		<form class="login-input input-group" novalidate name="loginForm"  ng-submit="login()">		
+			<div class="input-group">
+				<input name="login-email" type="text" ng-model="emailInput" id="emailInputBox" class="form-control" placeholder="E-mail" required />
+				<input name="login-password" type="password" ng-model="passwordInput" id="passwordInputBox" class="form-control" placeholder="Password" required /><br/>
+				<button type="submit" class="btn">Log in</button>
+				<button type="button" class="btn" ng-click="signup()">Register</button>
+				<span ng-if="loading" class="loading">{{loadText}}</span>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+
+
+

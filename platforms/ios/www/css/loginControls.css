@@ -1,0 +1,82 @@
+#login-controls {
+	background: #fff;
+	position: absolute;
+	right: 10px;
+	font-size: 15px;
+	padding: 10px;
+	border: 1px solid #436965;
+	z-index: 999;
+}
+
+#login-controls ul {
+	padding-left: 15px;
+	margin-right: 8px;
+	list-style-type: none;
+}
+
+#login-controls li {
+	margin-bottom: 8px;
+}
+
+.login-controls-button {
+	color: white;
+	position: absolute;
+	font-size: 16px;
+	right: 20px;
+	top: 30px;
+}
+
+.disabled {
+	color: #ccc;
+}
+
+#login-content {
+	padding-top: 25%;
+	position: relative;
+	width: 80%;
+	margin: auto;
+}
+
+#login-content>.input-group .form-control {
+	margin-bottom: 5px;
+	border-radius: 4px;
+}
+
+#login-content button {
+	margin-right: 5px;
+	color: white;
+	background-color: #E3B57C;
+}
+
+#login-header h1 {
+	padding: 10px;
+}
+
+.loading {
+	color: black;
+	-webkit-animation: load 1.5s infinite linear;
+  	-moz-animation: load 1.5s infinite linear;
+  	-o-animation: load 1.5s infinite linear;
+  	animation: load 1.5s infinite linear;
+}
+
+@-moz-keyframes load {
+  0% { color: black; }
+  50% {color: white }
+  100% { color: black; }
+}
+@-webkit-keyframes load {
+  0% { color: black; }
+  50% {color: white }
+  100% { color: black; }
+}
+@-o-keyframes load {
+  0% { color: black; }
+  50% {color: white }
+  100% { color: black; }
+}
+@keyframes load {
+  0% { color: black; }
+  50% {color: white }
+  100% { color: black; }
+}

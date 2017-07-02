@@ -1,0 +1,114 @@
+.even-steven {
+	background: #E6EEED;
+	border-radius: 4px;
+}
+
+#shopping-cart .row {
+	margin: 0px 0px 15px 0px;
+	padding: 0em;
+}
+.cart {
+ 	float: left;
+ 	margin:0;
+ 	padding: 0;
+}
+
+.trash {
+	float: right;
+	padding: 0;
+}
+.trash span {
+	float: right;
+	font-size: 30px;
+	margin: 0.2em 5px 0.2em 0;
+}
+.cart span {
+	font-size: 18px;
+	float: left;
+	padding:3px;	
+}
+
+#shoplist-content {
+	padding: 2em 2em 5em 2em;
+}
+
+@media (max-width: 768px) {
+	#shoplist-content {
+		padding: 1em 1em 5em 1em;
+	}
+}
+
+#shoplist-content .list-item,
+#shoplist-content label.text-label,
+.shoplist-input.input-group {
+	width: 75%;
+}
+
+#shoplist-content label.text-label {
+	font-weight: normal;
+	padding: 3px;
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+#shoplist-content ul {
+	padding-left: 0;
+}
+
+#shoplist-ingredients li,
+#shoplist-content>form,
+.shoplist-buttons>button,
+.shoplist-buttons>input[type=checkbox],
+#shopping-cart li {
+	font-size: 15px;
+	list-style: none;
+	font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Verdana, Geneva, sans-serif;
+	padding: 0.2em;
+}
+
+.shoplist-buttons,
+.shopping-cart  {
+	float: right;
+}
+
+.shoplist-buttons>button,
+.shoplist-buttons>input[type=checkbox] {
+	padding: 0;
+	color: white;
+    margin:0 0 0 5px;
+    vertical-align: middle;
+    background: #638F8A;
+    border:none;
+	height: 26px;
+	width: 26px;
+	line-height: 1em;
+}
+
+.shoplist-input .input-group-btn:last-child>.btn {
+	color: #fff;
+	background-color: #3C3532;
+}
+
+.shoplist-input .input-group {
+	margin-bottom: 30px;
+}
+
+#shopLoginButton {
+	cursor: pointer;
+}
+
+#cartDelete {
+	cursor: pointer;
+}
+
+/*.base-class {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.base-class.shop-animation {
+  color: red;
+  font-size:3em;
+}
+*/
+

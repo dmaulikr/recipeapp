@@ -1,0 +1,42 @@
+
+.selected {
+    background-color:#9CC0BC;
+    font-weight:bold;
+    font-size: 120%;
+    overflow: hidden;
+}
+.modal-header {
+	background-color:#436965; 
+}
+.modal-list-btn {
+	background-color: #3C3532;
+	color: #fff;
+}
+.modal-ok-btn {
+	background-color: #3C3532;
+	color: #fff;
+	float: left;
+	width: 49%
+}
+.modal-cancel-btn {
+	background-color: #3C3532;
+	color: #fff;
+	float: right;
+	width: 49%
+}
+.modal-item {
+	margin: 0px;
+	padding: 4px 0px 4px 0px;
+	overflow: hidden;
+}
+.modal-item span {
+	padding-left: 10px;
+	overflow: hidden;
+}
+.modal-list-input{
+	margin: 15px 0px 15px 10px;
+}
+.modal-input-field {
+	padding: 0;
+}
+/*E6EEED*/

@@ -1,0 +1,7 @@
+Plugin list:
+
+
+cordova plugin add nl.x-services.plugins.toast 		”Toasts”
+
+cordova plugin add org.apache.cordova.network-information
+

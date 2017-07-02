@@ -1,0 +1,16 @@
+
+<div ng-controller="favRecipesCtrl" id="favouriteContainer">
+	<div class="row">
+		<div class="header" id="favHeader">
+			<h1>Favourites</h1>
+		</div>
+
+		<ul id="favListContainer">
+			<li ng-repeat="i in favourites track by $index" id="favList" ng-class-even="'even-steven'">
+				<div id="favListDelete" class="glyphicon glyphicon-minus-sign" name="removeIngredientButton" ng-click="deleteFav(i.id)" type="button">
+				</div>
+				<span id="favText" ng-click="getPage(i.id)">{{i.foodName}}</span>
+			</li>
+		</ul>
+	</div>
+</div>

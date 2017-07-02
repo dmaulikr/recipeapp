@@ -1,0 +1,29 @@
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+      <ul class="nav navbar-nav">
+        <!-- iphone back button -->
+        <!-- 
+        <div ng-show="iphone">
+        <li class="iphone-back"><a ng-click="back()"><span class="glyphicon glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a></li>
+        </div> -->
+        <!-- end iphone -->
+
+        <!-- Link to Search-window -->
+      	<li><a href="#/foodtoSearch" ng-class="{activeSection: $route.current.activeTab == 'foodtoSearch'}">
+      			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+      		</a>
+      	</li>
+        <!-- Link to the users saved Shopping-Lists -->
+		    <li><a href="#/shopLists" ng-class="{activeSection: $route.current.activeTab == 'shopLists'}">
+      			<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+      		</a>
+      	</li>
+        <!-- Link to the users saved Favourite recipes -->
+      	<li><a href="#/favourites" ng-class="{activeSection: $route.current.activeTab == 'favourites'}">
+      			<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+      		</a>
+      	</li>
+      </ul>
+  </div><!-- /.container-fluid -->
+</nav>

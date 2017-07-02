@@ -1,0 +1,117 @@
+
+#recipeContainer {
+	margin: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	padding-bottom: 60px;
+}
+
+#recipeImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	max-width: 75%;
+}
+
+#recipeTitle {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 30px;
+	max-width: 85%;
+}
+
+.instructions {
+	font-size: 16px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 90%;
+}
+
+.recipeIngredients {
+	font-size: 16px;
+}
+
+#ingredientText {
+	font-size: 16px;
+	margin-left: 5px;
+	margin-bottom: 8px;
+}
+
+.checkAllButton {
+	height: 38px;
+	margin-left: 40px;
+	margin-bottom: 25px;
+	color: white;
+	background-color: #3C3532;
+	font-size: 16px;
+}
+
+.uncheckAllButton {
+	height: 38px;
+	margin-left: 6px;
+	margin-bottom: 25px;
+	color: white;
+	background-color: #3C3532;
+	font-size: 16px;
+}
+
+.checkBoxes {
+	margin: 100px;
+}
+
+#ingredientList {
+	list-style-type: none;
+}
+
+.favouriteButton {
+	margin-top: -4px;
+	left: 80%;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1;
+	border-radius: 25px;
+	color: white;
+	background-color: #9CC0BC;
+	position: fixed;
+}
+
+.addButton {
+	margin-top: -24px;
+	margin-left: 6px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1;
+	border-radius: 20px;
+	color: white;
+	background-color: #9CC0BC;
+}
+
+.checkAllButton:focus, 
+.checkAllButton:hover,
+.checkAllButton:active,
+.uncheckAllButton:focus, 
+.uncheckAllButton:hover,
+.uncheckAllButton:active,
+.favouriteButton:focus, 
+.favouriteButton:hover,
+.favouriteButton:active,
+.addButton:focus,
+.addButton:hover,
+.addButton:active {
+	color: #FFFFFF;
+}
+
+#plusIcon {
+	font-size: 10px;
+}

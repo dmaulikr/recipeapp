@@ -1,0 +1,26 @@
+<div ng-controller="ModalCtrl">   
+        <div class="modal-header">
+            <h3 class="modal-title">Choose your list</h3>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-xs-11 point modal-item" ng-repeat="(key, value) in shopLists" ng-click="select(key)" ng-class="{'selected':key == selected}">
+                    <span>{{ key }}</span> 
+               </div>
+            </div>
+            <br>
+            <div id="modal-list-input">
+                <button class="btn modal-list-btn" ng-click="newList()" ng-hide="show">Ny Lista</button>
+                <form novalidate ng-submit="ok($event)" class="row" name="$parent.modalForm" ng-show="show">   
+                    <div class="col-xs-10 modal-input-field">
+                        <input type="text" ng-model="$parent.textInput" class="form-control" placeholder="Listans Namn" input-focus required/>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            
+            <button class="btn modal-ok-btn" ng-click="ok()">OK</button>
+            <button class="btn modal-cancel-btn" ng-click="cancel()">Cancel</button>
+        </div>
+</div>
